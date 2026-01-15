@@ -1,5 +1,3 @@
-Aqui está o arquivo README.md completo e formatado para o seu módulo. Ele explica a proposta do sistema, as funcionalidades de agrupamento e como operar os botões de controle de turno no Foundry VTT v11.
-
 TWD Combat for Foundry VTT
 Este módulo transforma o Combat Tracker padrão do Foundry VTT em uma ferramenta tática específica para o sistema The Walking Dead RPG (Free League) ou qualquer sistema baseado em Year Zero Engine que utilize seleção de ações por fase.
 
