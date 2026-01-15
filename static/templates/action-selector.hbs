@@ -1,0 +1,6 @@
+<select class="action-selector" data-combatant-id="{{id}}">
+  <option value="">Selecione Ação</option>
+  {{#each actionOptions}}
+    <option value="{{value}}" {{#if (eq ../selectedAction value)}}selected{{/if}}>{{label}}</option>
+  {{/each}}
+</select>

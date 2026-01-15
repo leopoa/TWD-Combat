@@ -1,0 +1,57 @@
+/* Cabeçalhos de Grupo */
+.twd-action-group-header {
+  padding: 6px 12px;
+  margin: 12px 0 4px 0;
+  font-family: "Modesto Condensed", serif;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Estilo Especial para Derrotados */
+.twd-action-group-header.group-defeated {
+  background: rgba(0, 0, 0, 0.7) !important;
+  border-left: 4px solid #ff0000 !important;
+  color: #ff4444;
+}
+
+/* Ícones de Ação */
+.twd-action-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 4px 0;
+}
+
+.twd-action-container.readonly {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.action-icon {
+  font-size: 14px;
+  color: #444;
+  opacity: 0.3;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.action-icon.selected {
+  opacity: 1 !important;
+}
+
+/* Cores por Ação */
+.action-1.selected { color: #2980b9 !important; }
+.action-2.selected { color: #c0392b !important; }
+.action-3.selected { color: #27ae60 !important; }
+.action-4.selected { color: #d35400 !important; }
+.action-5.selected { color: #8e44ad !important; }
+.action-6.selected { color: #ffe601 !important; }
+
+/* Botões Play/Stop */
+.twd-round-buttons .combat-button.disabled {
+  display: none;
+}
