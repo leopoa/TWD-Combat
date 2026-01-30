@@ -32,8 +32,7 @@
 }
 
 .action-icon {
-  font-size: 14px;
-  color: #444;
+  font-size: 14px;  
   opacity: 0.3;
   transition: all 0.2s;
   cursor: pointer;
