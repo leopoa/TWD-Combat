@@ -1,0 +1,86 @@
+/* TWD Combat – Foundry VTT v14
+   Uses CSS layers so styles play well with core ApplicationV2 theming. */
+
+@layer twd-combat {
+  /* Group headers */
+  .twd-action-group-header {
+    padding: 6px 12px;
+    margin: 12px 0 4px 0;
+    font-family: var(--font-h3, "Modesto Condensed", serif);
+    font-size: 1.1em;
+    font-weight: bold;
+    color: var(--color-text-light-highlight, #fff);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 0 4px 4px 0;
+    list-style: none;
+  }
+
+  .twd-action-group-header.group-defeated {
+    background: rgba(0, 0, 0, 0.7) !important;
+    border-left: 4px solid #ff0000 !important;
+    color: #ff4444;
+  }
+
+  /* Action icons row */
+  .twd-action-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 4px 0;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 2px;
+  }
+
+  .twd-action-container.readonly {
+    pointer-events: none;
+    opacity: 0.6;
+  }
+
+  .action-icon {
+    font-size: 14px;
+    opacity: 0.3;
+    transition: opacity 0.2s, transform 0.15s;
+    cursor: pointer;
+    color: var(--color-text-primary, inherit);
+  }
+
+  .action-icon:hover {
+    opacity: 0.7;
+    transform: scale(1.15);
+  }
+
+  .action-icon.selected {
+    opacity: 1 !important;
+  }
+
+  /* Per-action selected colors */
+  .action-1.selected { color: #2980b9 !important; }
+  .action-2.selected { color: #c0392b !important; }
+  .action-3.selected { color: #27ae60 !important; }
+  .action-4.selected { color: #d35400 !important; }
+  .action-5.selected { color: #8e44ad !important; }
+  .action-6.selected { color: #ffe601 !important; }
+
+  /* Play / Stop controls */
+  .twd-round-buttons {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 8px;
+  }
+
+  .twd-round-buttons .combat-button {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+
+  .twd-round-buttons .combat-button:hover {
+    opacity: 1;
+  }
+
+  .twd-round-buttons .combat-button.disabled {
+    display: none;
+  }
+}

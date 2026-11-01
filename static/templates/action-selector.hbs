@@ -1,0 +1,7 @@
+{{!-- Legacy template kept for reference; v14 injects icons via DOM in main.js --}}
+<select class="action-selector" data-combatant-id="{{id}}">
+  <option value="">Selecione Ação</option>
+  {{#each actionOptions}}
+    <option value="{{value}}" {{#if (eq ../selectedAction value)}}selected{{/if}}>{{label}}</option>
+  {{/each}}
+</select>
