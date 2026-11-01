@@ -46,23 +46,26 @@ Módulo que transforma o Combat Tracker padrão do Foundry VTT em uma ferramenta
 
 ---
 
-## Migração v11 → v14 (resumo técnico)
+### 📋 Grupos e Ordem de Iniciativa
 
-| Área | v11 | v14 |
-|------|-----|-----|
-| Manifest | `compatibility.minimum: 11` | `minimum` / `verified`: **14** |
-| CombatTracker | Application V1 + `getData()` | **ApplicationV2** + `_prepareContext()` |
-| Hook `renderCombatTracker` | `html` = jQuery | `html` = **HTMLElement** (DOM) |
-| Controles do core | `data-control` | preferir **`data-action`** |
-| Classes de documento | `CONFIG.Combat.documentClass` | igual (ainda suportado) |
-| CSS | estilos soltos | **`@layer twd-combat`** + variáveis CSS |
+O módulo organiza a fila de combate seguindo esta ordem de prioridade:
 
-Arquivos principais:
-- `src/main.js` – hooks e UI DOM
-- `src/combat.js` – `TWDCombat` / `TWDCombatant`
-- `src/tracker.js` – `TWDCombatTracker` (AppV2)
-- `src/constants.js` – ações e settings
-- `static/styles/twd-combat.css`
+🔵 Cover (Ação 1)
+
+🔴 Tiro a Distância (Ação 2)
+
+🟢 Corpo-a-Corpo (Ação 3)
+
+🟠 Movimentação (Ação 4)
+
+🟣 Curar (Ação 5)
+
+⚪ Outros (Ação 6)
+
+💀 Derrotados (Tokens com status de derrotado)
+
+
+<img width="297" height="409" alt="image" src="https://github.com/user-attachments/assets/a07bd0e6-1337-4cee-ada6-c0d85275121e" />
 
 ---
 
