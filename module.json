@@ -2,7 +2,7 @@
   "id": "twd-combat",
   "title": "TWD Combat for Foundry VTT",
   "description": "Custom combat module for The Walking Dead RPG using Year Zero Engine rules. Compatible with Foundry VTT v14.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "compatibility": {
     "minimum": "14",
     "verified": "14"
@@ -29,5 +29,5 @@
   ],
   "url": "https://github.com/leopoa/TWD-Combat",
   "manifest": "https://raw.githubusercontent.com/leopoa/TWD-Combat/main/module.json",
-  "download": "https://github.com/leopoa/TWD-Combat/archive/refs/tags/1.0.0.zip"
+  "download": "https://github.com/leopoa/TWD-Combat/archive/refs/tags/1.0.1.zip"
 }
